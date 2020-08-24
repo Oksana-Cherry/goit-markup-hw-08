@@ -961,7 +961,7 @@ html {
   background-size: cover;
 }
 
-/*@media screen and (min-weight: 320px) {
+/*@media screen and (min-weidth: 320px) {
    .hero {
   min-height: 400px;
   padding-top: 118px;
@@ -971,25 +971,25 @@ html {
    url("../images/mobile/headerimgmobi.jpg");
   }
 }*/
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-weight: 320px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-weidth: 320px) {
   .hero {
     background-image: linear-gradient to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8), url("../images/mobile/headerimgmobi@2x.jpg");
   }
 }
 
-@media screen and (min-weight: 768px) {
+@media screen and (min-weidth: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/tablet/header-imgtab.jpg");
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-weight: 768px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-weidth: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/tablet/headerimgtab@2x.jpg");
   }
 }
 
-@media screen and (min-weight: 1200px) {
+@media screen and (min-weidth: 1200px) {
   .hero {
     min-height: 600px;
     padding-top: 200px;
@@ -998,7 +998,7 @@ html {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-weight: 1200px) {
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-weidth: 1200px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/destop/headerimgdes@2x.jpg");
   }
@@ -1015,7 +1015,7 @@ html {
 @media screen and (min-width: 480px) {
   .hero-title {
     font-size: 26px;
-    line-height: 1, 62;
+    line-height: 1,62;
   }
 }
 
@@ -1118,7 +1118,6 @@ html {
     margin-right: 30px;
   }
   .element-item-pic {
-    /* width: 354px;*/
     padding: 25px 142px;
   }
 }

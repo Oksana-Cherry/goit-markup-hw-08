@@ -32,6 +32,7 @@
   border-radius: 4px;
   margin-bottom: 30px;
 }
+
 @media screen and(max-width: 767px){
   .section.nopad {
   padding-top: 60px;
@@ -51,7 +52,7 @@
   .element-list-item{
   margin-bottom: 30px;
 }
-  .element-list {
+.element-list {
   display: flex;
   flex-wrap: wrap;
   }
@@ -62,10 +63,7 @@
   margin-right: 30px;
  }
 
-
-
 .element-item-pic {
- /* width: 354px;*/
   padding: 25px 142px;       
  }
 }
