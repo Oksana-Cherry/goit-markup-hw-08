@@ -1,9 +1,4 @@
 /*Важные акценты*/
-
-/*.section.nopad {
-  padding-top: 94px;
-  padding-bottom: 0;
-}*/
 .element-item-pic-svg {
   width: 70px;
   height: 70px;
@@ -24,9 +19,6 @@
   color: $title-text-color;
 }
 .element-item-pic {
- /* width: 270px;
-  height: 120px;*/
-  /*padding: 25px 100px;*/
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -40,7 +32,7 @@
 }
   .element-item-pic {
   max-width: 450px;
-  padding: 25px 180px;       
+  padding: 25px 190px;       
  }
  .element-list-item:not(:last-child) {
     margin-bottom: 30px;
@@ -48,26 +40,51 @@
 }
 /*:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;*/
-@media screen and(min-width: 768px){
-  .element-list-item{
-  margin-bottom: 30px;
-}
-.element-list {
+/*@media screen and (min-width: 768px) and (max-width: 1199px){*/
+
+@media screen and (min-width: 768px){
+  .element-list {
   display: flex;
-  flex-wrap: wrap;
   }
+.element-list-item{
+  margin-bottom: 30px;
+  &:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+ }
+}
 .element-list-item{
     width: calc((100%-30px)/2);
   } 
 .element-list-item:nth-child(2n+1) {
   margin-right: 30px;
  }
-
 .element-item-pic {
   padding: 25px 142px;       
  }
 }
-  /* @media screen and(min-width: 1200px){
-  not(:nth-last-child(-n+2)) {
-    margin: 30px;    
-}*/
+@media screen and (max-width: 1199px){
+  .element-list {
+   flex-wrap: wrap;
+  }
+}
+ @media screen and(min-width: 1200px){
+   .section.nopad {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+  .element-list {
+   display: flex;
+ 
+  &-item:not(:last-child) {
+  margin-right: 30px;
+    }
+  }
+  .element-list-item{
+  margin-bottom: 0;
+}
+  .element-item-pic {
+   min-width: 270px;
+   padding: 25px 100px;
+  }  
+}
+ 

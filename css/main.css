@@ -215,9 +215,18 @@ html {
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .title {
@@ -1012,7 +1021,7 @@ html {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .hero-title {
     font-size: 26px;
     line-height: 1,62;
@@ -1051,10 +1060,6 @@ html {
 }
 
 /*Важные акценты*/
-/*.section.nopad {
-  padding-top: 94px;
-  padding-bottom: 0;
-}*/
 .element-item-pic-svg {
   width: 70px;
   height: 70px;
@@ -1078,9 +1083,6 @@ html {
 }
 
 .element-item-pic {
-  /* width: 270px;
-  height: 120px;*/
-  /*padding: 25px 100px;*/
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -1094,7 +1096,7 @@ html {
   }
   .element-item-pic {
     max-width: 450px;
-    padding: 25px 180px;
+    padding: 25px 190px;
   }
   .element-list-item:not(:last-child) {
     margin-bottom: 30px;
@@ -1103,13 +1105,16 @@ html {
 
 /*:not(:nth-last-child(-n+2)) {
     margin-bottom: 30px;*/
+/*@media screen and (min-width: 768px) and (max-width: 1199px){*/
 @media screen and (min-width: 768px) {
+  .element-list {
+    display: flex;
+  }
   .element-list-item {
     margin-bottom: 30px;
   }
-  .element-list {
-    display: flex;
-    flex-wrap: wrap;
+  .element-list-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
   }
   .element-list-item {
     width: calc((100%-30px)/2);
@@ -1122,32 +1127,67 @@ html {
   }
 }
 
-/* @media screen and(min-width: 1200px){
-  not(:nth-last-child(-n+2)) {
-    margin: 30px;    
-}*/
-/*Чем мы занимаемся*/
-.expert-item {
-  position: relative;
-  width: 370px;
-  height: 294px;
+@media screen and (max-width: 1199px) {
+  .element-list {
+    flex-wrap: wrap;
+  }
 }
 
-.subtitle {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  padding: 27px 82px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1,14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  background-color: rgba(47, 48, 58, 0.8);
-  text-transform: uppercase;
-  color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .section.nopad {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+  .element-list {
+    display: flex;
+  }
+  .element-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .element-list-item {
+    margin-bottom: 0;
+  }
+  .element-item-pic {
+    min-width: 270px;
+    padding: 25px 100px;
+  }
+}
+
+/*Чем мы занимаемся*/
+@media screen and (max-width: 1199px) {
+  .servises {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .expert {
+    display: flex;
+  }
+  .expert-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .expert-item {
+    position: relative;
+    width: 370px;
+    height: 294px;
+  }
+  .subtitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 27px 82px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1,14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 /*Наша команда*/
