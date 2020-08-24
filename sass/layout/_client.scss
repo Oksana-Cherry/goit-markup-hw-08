@@ -1,0 +1,28 @@
+/*Постоянные клиенты*/
+.client-item-a {
+  width: 170px;
+  height: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border 250ms $timing-function;
+
+&:hover,
+&:focus {
+  border: 1px solid $accent-color;
+ }
+}
+.client-item-svg {
+  fill: currentColor;
+  transition: fill 250ms $timing-function;
+
+&:hover,
+&:focus {
+  fill: $accent-color;
+ }
+}

@@ -1,0 +1,75 @@
+/*Важные акценты*/
+
+/*.section.nopad {
+  padding-top: 94px;
+  padding-bottom: 0;
+}*/
+.element-item-pic-svg {
+  width: 70px;
+  height: 70px;
+}
+.subject {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-dark-color;
+  margin-bottom: 10px;
+}
+.text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $title-text-color;
+}
+.element-item-pic {
+ /* width: 270px;
+  height: 120px;*/
+  /*padding: 25px 100px;*/
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+@media screen and(max-width: 767px){
+  .section.nopad {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+  .element-item-pic {
+  max-width: 450px;
+  padding: 25px 180px;       
+ }
+ .element-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+/*:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;*/
+@media screen and(min-width: 768px){
+  .element-list-item{
+  margin-bottom: 30px;
+}
+  .element-list {
+  display: flex;
+  flex-wrap: wrap;
+  }
+.element-list-item{
+    width: calc((100%-30px)/2);
+  } 
+.element-list-item:nth-child(2n+1) {
+  margin-right: 30px;
+ }
+
+
+
+.element-item-pic {
+ /* width: 354px;*/
+  padding: 25px 142px;       
+ }
+}
+  /* @media screen and(min-width: 1200px){
+  not(:nth-last-child(-n+2)) {
+    margin: 30px;    
+}*/

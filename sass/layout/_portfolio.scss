@@ -1,0 +1,39 @@
+/*портфолио*/
+.header.portfolio {
+  border-bottom: 1px solid #ececec;
+}
+.portfolio-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-btn {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.button-port:not(:last-child) {
+  margin-right: 8px;
+}
+.button-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  color: $title-dark-color;
+  transition: background-color 250ms $timing-function,
+    color 250ms $timing-function, box-shadow 250ms $timing-function;
+
+&:hover,
+&:focus {
+  background-color: $accent-color;
+  color: $text-fon;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+ }
+}

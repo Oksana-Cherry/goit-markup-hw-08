@@ -1,0 +1,23 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.body {
+  font-family: $main-font;
+  background-color: $text-fon;
+  color: $title-text-color;
+}

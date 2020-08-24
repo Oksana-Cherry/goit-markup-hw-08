@@ -1,0 +1,35 @@
+/*Наша команда*/
+.section.color {
+  background: #f5f4fa;
+}
+.komand-list-item {
+  width: 270px;
+  height: 422px;
+  background: #ffffff;
+  /*border: 1px solid #eeeeee;*/
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+  .komand-list-item-img {
+  margin-bottom: 30px;
+}
+.title-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-dark-color;
+}
+.title-desc-list {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+}

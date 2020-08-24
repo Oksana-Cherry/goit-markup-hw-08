@@ -1,0 +1,23 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 50px;
+  line-height: 1.67;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-dark-color;
+}
+/*.expert,
+.client,
+.komand-list,
+.element-list {
+  display: flex;
+
+&-item:not(:last-child) {
+  margin-right: 30px;
+ }
+}*/
