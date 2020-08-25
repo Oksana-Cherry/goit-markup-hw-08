@@ -34,6 +34,7 @@
             </li>
           </ul>
         </nav>
+        <div class="auth-nav-adress">
         <ul class="auth-nav">
           <li class="address-list">
             <address class="address-list-mail">
@@ -54,6 +55,7 @@
             </address>
           </li>
         </ul>
+        </div>
        </div>           
       </div>
     </header>
@@ -129,19 +131,19 @@
           <ul class="expert">
             <li class="expert-item">
               <a class="expert-list" href="#">
-                <img src="./images/img.png" alt="ноутбук"/>
+                <img srcset="./images/destop/img-dest1.jpg 1x, ./images/destop/img@2x-dest1.jpg 2x" src="./images/destop/img-dest1.jpg" alt="ноутбук"/>
                 <p class="subtitle">Десктопные приложения</p>
               </a>
             </li>
             <li class="expert-item">
               <a class="expert-list" href="#">
-                <img src="./images/box.png" alt="смартфон"/>
+                <img srcset="./images/destop/img-dest2.jpg 1x, ./images/destop/img@2x-dest2.jpg 2x" src="./images/destop/img-dest2.jpg" alt="смартфон"/>
                 <p class="subtitle">Мобильные приложения</p>
               </a>
             </li>
             <li class="expert-item">
               <a class="expert-list" href="#">
-                <img src="./images/dizain.png" alt="экран"/>
+                <img srcset="./images/destop/img-dest3.jpg 1x, ./images/destop/img@2x-dest3.jpg 2x" src="./images/destop/img-dest3.jpg" alt="экран"/>
                 <p class="subtitle">Дизайнерские решения</p>
               </a>
             </li>
@@ -154,8 +156,16 @@
           <h2 class="title">Наша команда</h2>
           <ul class="komand-list">
             <li class="komand-list-item">
-              <img class="komand-list-item-img" src="./images/nk.png" alt="Николай Кучеренко"/>
-              <h3 class="title-name">Николай Кучеренко</h3>
+              <picture class="komand-list-item-img">
+                <source srcset="./images/destop/img-dest4.jpg 1x, ./images/destop/img@2x-dest4.jpg 2x"
+                 media="(min-width:1200px)">
+                <source srcset="./images/tablet/img-tabl1.jpg 1x, ./images/tablet/img@2x-tabl1.jpg 2x"
+                 media="(min-width:768px)">
+                <source srcset="./images/mobile/img-mobi1.jpg 1x, ./images/mobile/img@2x-mobi1.jpg 2x"
+                 media="(max-width:767px)">
+                <img src="./images/mobile/img-mobi1.jpg" alt="Игорь Демьяненко"  class="komand-list-item-img"/>
+              </picture>
+              <h3 class="title-name">Игорь Демьяненко</h3>
               <p class="title-desc-list" lang="en">Product Designer</p>
               <ul class="social-links">
                 <li class="link">
@@ -189,8 +199,13 @@
               </ul>
             </li>
             <li class="komand-list-item">
-              <img class="komand-list-item-img" src="./images/oi.png" alt="Ольга Иванова"/>
-              <h3 class="title-name">Ольга Иванова</h3>
+              <picture class="komand-list-item-img">
+                <source srcset="./images/destop/img-dest5.jpg 1x, ./images/destop/img@2x-dest5.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/tablet/img-tabl2.jpg 1x, ./images/tablet/img@2x-tabl2.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/mobile/img-mobi2.jpg 1x, ./images/mobile/img@2x-mobi2.jpg 2x" media="(max-width:767px)">
+                <img src="./images/mobile/img-mobi2.jpg" alt="Ольга Репина"/>
+              </picture>
+              <h3 class="title-name">Ольга Репина</h3>
               <p class="title-desc-list" lang="en">Frontend Developer</p>
               <ul class="social-links komand">
                 <li class="link">
@@ -224,8 +239,13 @@
               </ul>
             </li>
             <li class="komand-list-item">
-              <img class="komand-list-item-img" src="./images/ash.png" alt="Андрей Шевченко"/>
-              <h3 class="title-name">Андрей Шевченко</h3>
+              <picture class="komand-list-item-img">
+                <source srcset="./images/destop/img-dest6.jpg 1x, ./images/destop/img@2x-dest6.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/tablet/img-tabl3.jpg 1x, ./images/tablet/img@2x-tabl3.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/mobile/img-mobi3.jpg 1x, ./images/mobile/img@2x-mobi3.jpg 2x" media="(max-width:767px)">
+              <img src="./images/mobile/img-mobi3.jpg" alt="Николай Тарасов" />
+                </picture>
+              <h3 class="title-name">Николай Тарасов</h3>
               <p class="title-desc-list" lang="en">Marketing</p>
               <ul class="social-links">
                 <li class="link">
@@ -259,8 +279,13 @@
               </ul>
             </li>
             <li class="komand-list-item">
-              <img class="komand-list-item-img" src="./images/in.png" alt="Иван Николаев"/>
-              <h3 class="title-name">Иван Николаев</h3>
+              <picture class="komand-list-item-img">
+                <source srcset="./images/destop/img-dest7.jpg 1x, ./images/destop/img@2x-dest7.jpg 2x" media="(min-width:1200px)">
+                <source srcset="./images/tablet/img-tabl4.jpg 1x, ./images/tablet/img@2x-tabl4.jpg 2x" media="(min-width:768px)">
+                <source srcset="./images/mobile/img-mobi4.jpg 1x, ./images/mobile/img@2x-mobi4.jpg 2x" media="(max-width:767px)">
+                <img src="./images/mobile/img-mobi4.jpg" alt="Михаил Ермаков" />
+              </picture>
+              <h3 class="title-name">Михаил Ермаков</h3>
               <p class="title-desc-list" lang="en">UI Designer</p>
               <ul class="social-links">
                 <li class="link">

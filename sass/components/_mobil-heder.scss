@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
 }*/
+
 .navigation-list-link,
 .address-mail,
 .address-tel{
@@ -44,7 +45,6 @@
 .address-mail,
 .address-tel {
   display: flex;
-  justify-content: center;
   align-items: center;
   color: $title-text-color;
   transition: color 250ms $timing-function, fill 250ms $timing-function;
@@ -53,6 +53,7 @@
   fill: $accent-color;
   }
 }
+
 @media screen and(max-width: 767px){
   .main-nav{
     position: relative;
@@ -73,6 +74,11 @@
   .address-list + .address-list {
     margin-top: 16px;
   }
+  .address-mail,
+  .address-tel {
+    justify-content: center;
+  }
+
   .navigation-list-link,
   .address-mail,
   .address-tel {
@@ -165,7 +171,9 @@
   padding-right: 0;
   }
  }
-
+.auth-nav-adress{
+display: flex;
+}
  .address-mail, .address-tel {
   font-size: 12px;
   line-height: 1,16;
