@@ -1,6 +1,5 @@
 /*Постоянные клиенты*/
 .client-item-a {
-  width: 170px;
   height: 90px;
   cursor: pointer;
   display: flex;
@@ -20,9 +19,53 @@
 .client-item-svg {
   fill: currentColor;
   transition: fill 250ms $timing-function;
-
 &:hover,
 &:focus {
   fill: $accent-color;
+ }
+}
+@media screen and(max-width: 767px){
+  .client-item-a{
+    min-width:210px
+  }
+ .client-item{
+   margin-bottom: 30px;
+  &:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+  }
+  &:nth-child(2n+1) {
+   margin-right: 30px;
+    }
+  }
+}
+@media screen and(min-width: 768px){
+  .client-item-a {
+  width: 226px;
+}
+ .client-item{
+  margin-right: 30px;
+  &:nth-child(3n){
+    margin-right:0;
+  }
+  &:nth-child(-n+3){
+  margin-bottom: 30px;
+ }
+ }
+}
+@media screen and (max-width: 1199px){
+.client{
+   display: flex;
+   flex-wrap: wrap;
+  }
+}
+@media screen and(min-width: 1200px){
+.client-item-a {
+  width: 170px;
+}
+.client{
+  display: flex;
+&-item:not(:last-child) {
+  margin-right: 30px;
+  }
  }
 }

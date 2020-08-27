@@ -5,7 +5,7 @@
   justify-content: space-between;
 }*/
 
-.navigation-list-link,
+.navigation-list-item,
 .address-mail,
 .address-tel{
     font-weight: 500;
@@ -119,7 +119,6 @@
     top: 100%;
     right: 0;
     width: 100%;
-    /*height: 393px;*/
     padding-top: 60px;
     padding-bottom: 60px;
     text-align: center;
@@ -133,6 +132,7 @@
     transform: scale(1);
     border-top: 1px solid #ececec;
     opacity: 1;
+    z-index: 100;
    }
   }
 }
@@ -206,6 +206,10 @@ display: flex;
 font-size: 14px;
 line-height: 16px;
  }
+ .navigation-list-item{
+  font-size: 14px;
+  line-height: 1.14;
+}
   .address-icon {
   margin-right: 10px;
    }

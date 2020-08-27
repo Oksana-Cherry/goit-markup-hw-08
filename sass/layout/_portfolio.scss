@@ -2,14 +2,9 @@
 .header.portfolio {
   border-bottom: 1px solid #ececec;
 }
-.portfolio-main {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .portfolio-btn {
   display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
 }
 .button-port:not(:last-child) {
   margin-right: 8px;
@@ -36,4 +31,35 @@
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 3px 1px rgba(0, 0, 0, 0.1);
  }
+}
+@media screen and(max-width: 767px){
+.button-port{
+  margin-bottom: 15px;
+   &:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+  }
+}
+  .portfolio-btn {
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+ }
+}
+
+@media screen and(min-width: 768px){
+.portfolio-btn {
+ justify-content: center;
+ padding-bottom: 50px;
+ }
+}
+@media screen and(max-width: 1199px){
+ .portfolio-main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and(min-width: 1200px){
+.portfolio-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 }

@@ -1,8 +1,18 @@
-
+.title {
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-dark-color;
+  }
  @media screen and(max-width: 1199px){
  .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  }
+.title {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 30px;
   }
  }
 @media screen and(min-width: 1200px){
@@ -10,16 +20,14 @@
   padding-top: 94px;
   padding-bottom: 94px;
  }
-}
-.title {
-  font-weight: bold;
+ .title {
   font-size: 36px;
   margin-bottom: 50px;
   line-height: 1.67;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $title-dark-color;
+ }
 }
+
+
 /*.expert,
 .client,
 .komand-list,

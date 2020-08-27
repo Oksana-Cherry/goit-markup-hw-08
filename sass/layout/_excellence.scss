@@ -28,7 +28,7 @@
 @media screen and(max-width: 767px){
   .section.nopad {
   padding-top: 60px;
-  padding-bottom: 0;
+
 }
   .element-item-pic {
   max-width: 450px;
@@ -52,12 +52,13 @@ display: flex;
   margin-bottom: 0;
  }
 }
+/*calc((100%-30px)/2)*/
 .element-list-item{
-    width: calc((100%-30px)/2);
+    width: 354px;
+   &:nth-child(2n+1) {
+   margin-right: 30px;
+    }
   } 
-.element-list-item:nth-child(2n+1) {
-  margin-right: 30px;
- }
 .element-item-pic {
   padding: 25px 142px;       
  }
